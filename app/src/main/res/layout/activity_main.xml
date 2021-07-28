@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nota1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
@@ -15,10 +15,10 @@
         android:hint="Nota1"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="53dp" />
+        tools:layout_editor_absoluteY="50dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/nota2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
@@ -26,21 +26,21 @@
         android:hint="Nota2"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="136dp" />
+        tools:layout_editor_absoluteY="130dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/faltas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="?attr/colorError"
+        android:background="@android:color/darker_gray"
         android:ems="10"
         android:hint="Faltas"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="222dp" />
+        tools:layout_editor_absoluteY="210dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular"
@@ -49,11 +49,25 @@
         tools:layout_editor_absoluteY="292dp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/reiniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reiniciar"
         app:backgroundTint="@android:color/holo_red_dark"
         tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="350dp" />
+        tools:layout_editor_absoluteY="369dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcular"
+        app:layout_constraintVertical_bias="0.129" />
 </androidx.constraintlayout.widget.ConstraintLayout>
